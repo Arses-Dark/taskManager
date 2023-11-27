@@ -1,0 +1,32 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "expressjs mongoose dotenv ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arses-Dark/taskManager.git"
+  },
+  "author": "Arses Dark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arses-Dark/taskManager/issues"
+  },
+  "homepage": "https://github.com/Arses-Dark/taskManager#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.0.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}

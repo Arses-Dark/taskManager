@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "e047269c-6d8a-4f5e-bacc-157d01955be0",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29248892"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/v1/task"
+			},
+			"response": []
+		},
+		{
+			"name": "Single",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/task/656392e3c85f59e867da9272",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"656392e3c85f59e867da9272"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "656392e3c85f59e867da9272",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"f api\",\n        \"description\": \"express\",\n        \"status\": \"todo\"\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/task"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"title\": \"fast api\",\n            \"description\": \"pess\",\n            \"status\": \"todo\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/task//656392e3c85f59e867da9272"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/task/656392e3c85f59e867da9272",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"task",
+						"656392e3c85f59e867da9272"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "656386ebefc5161e9dae0a14",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
